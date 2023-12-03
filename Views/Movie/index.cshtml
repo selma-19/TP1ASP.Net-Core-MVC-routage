@@ -1,0 +1,7 @@
+﻿@model IEnumerable<tp1.Models.Movie>
+
+<h2>Test Vue Index</h2>
+@foreach (var item in Model)
+{
+    <h3>@Html.ActionLink(item.Name,"Details",new{id=item.Id})</h3>
+}
